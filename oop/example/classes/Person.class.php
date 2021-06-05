@@ -1,18 +1,38 @@
 <?php 
 
-    class Person {
-        public $name;
-        public $age;
+    abstract class Person {
 
-        public function __construct($name, $age)
+        protected $firstName;
+        protected $lastName;
+        protected $gender;
+        
+        //static property
+        protected static $bloodGroup = "A+";
+
+        public function __construct($firstName, $lastName, $gender = 'f')
         {
-            $this->name = $name;
-            $this->age = $age;
+            $this->firstName = $firstName;
+            $this->lastName = $lastName;
+            $this->gender = $gender;
         }
 
-        public function info(){
-            echo "Hello I am {$this->name} and I am {$this->age} years old. <br>";
+        public function sayHello(){
+            return "Hello my name is {$this->firstName} {$this->lastName}";
         }
+
+        public function getGender(){
+            return $this->gender;
+        }
+
+        public function message(){
+            return "Hello I don't have a job yet <br>";
+
+        }
+
+        //abstract method
+        abstract protected function prefix();
+
+        
     }
 
 
