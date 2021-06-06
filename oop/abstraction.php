@@ -32,10 +32,10 @@
                }
            }
 
-           $girl = new Person();
-           echo $girl->prefixName("Sandushi");
-           $boy = new Person();
-           echo $boy->prefixName("Ayesh");
+        //    $girl = new Person();
+        //    echo $girl->prefixName("Sandushi");
+        //    $boy = new Person();
+        //    echo $boy->prefixName("Ayesh");
 
            
        ?>

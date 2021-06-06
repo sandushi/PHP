@@ -18,16 +18,16 @@
                 }
             }
 
-            class Girl extends Person{
-                public $name;
+            // class Girl extends Person{
+            //     public $name;
 
-                public function __construct(){
-                    $this->name = parent :: getName();
-                }
-            }
+            //     public function __construct(){
+            //         $this->name = parent :: getName();
+            //     }
+            // }
 
-            $object = new Girl();
-            echo $object->name;
+            // $object = new Girl();
+            // echo $object->name;
             
        ?>
        
